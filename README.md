@@ -87,7 +87,7 @@ git clone https://github.com/Rhutvik-pachghare1999/PulseNet.git && cd PulseNet
 cp .env.example .env  # Configure environment variables
 # Place train_FD001.txt, test_FD001.txt, RUL_FD001.txt in project root
 docker-compose up --build
-```
+Rhutvik-pachghare1999
 
 | Service | URL |
 |---|---|
@@ -289,7 +289,80 @@ See [`.env.example`](.env.example) for the full template.
 ## Team
 | Name | Role | Contributions |
 |---|---|---|
-| **Pooja Kiran** | Lead AI Systems Architect | Multi-model ML architecture, NVIDIA GPU optimization, AES-256 + Blockchain security, FastAPI backend, MLOps + async streaming pipeline |
-| **Rhutvik Pachghare** | Robotics Systems & DevOps Engineer | Hardware-to-software telemetry bridge, 52-case pytest suite, Docker Compose deployment, Streamlit dashboard, CI/CD pipeline governance |
+| **Pooja Kiran** | Lead AI Systems Architect | Multi-model ML architecture, NVIDIA GPU optimization, AES-256 + Blockchain ## 🏗️ Contributions
 
-**Version**: 2.1.0 | **License**: [Apache 2.0](LICENSE)
+### Pooja Kiran — Lead AI Systems Architect & Core Developer
+**Domain:** ML Architecture · GPU Optimization · Security · Backend · MLOps
+
+**1. Multi-Model ML Architecture (4 models)**
+   - Isolation Forest — Global outlier detection
+   - LSTM Autoencoder — Temporal sequence modeling
+   - Transformer Autoencoder — Long-range dependency modeling
+   - Ensemble Combiner — Majority vote + weighted score fusion
+
+**2. NVIDIA GPU Hardware Optimization**
+   - Distributed Data Parallel (DDP) multi-GPU training
+   - Automatic Mixed Precision (AMP) for 2x speedup
+   - GPU memory optimization for 10,000+ samples/sec throughput
+
+**3. Enterprise Security Protocol**
+   - AES-256 Fernet encryption with automatic key rotation
+   - JWT authentication + 3-tier RBAC (admin/engineer/operator)
+   - SHA-256 blockchain audit trail with Merkle tree validation
+
+**4. FastAPI Backend Engine**
+   - RESTful API endpoints: `/predict`, `/train`, `/audit`, `/verify-chain`
+   - Prometheus `/metrics` integration for observability
+   - Async request handling with backpressure control
+
+**5. MLOps & Real-Time Streaming Pipeline**
+   - MLflow experiment tracking + automated drift detection
+   - Async producer/consumer architecture for telemetry
+   - End-to-end telemetry instrumentation (counters, histograms)
+
+### Rhutvik Pachghare — Robotics Systems & DevOps Engineer  
+**Domain:** Hardware Integration · Testing · Containerization · Visualization · CI/CD
+
+**1. Hardware-to-Software Telemetry Bridge** (`scripts/robotics_telemetry_bridge.py`)
+   - Edge controller for field robotics integration
+   - Collects 14 physical sensor voltages at 1 Hz from real engine mock-interfaces
+   - Injects simulated high-pressure compressor degradation over time
+   - Emergency safe-shutdown: AI scores hardware health <50% → sequenced mechanical disengagement
+
+**2. 52-Case Pytest Validation Suite**
+   - `tests/test_models.py` — 12 cases (train/predict/tune/save)
+   - `tests/test_api.py` — 18 cases (endpoints/auth/RBAC)
+   - `tests/test_security.py` — 14 cases (encryption/blockchain/audit)
+   - `tests/test_pipeline.py` — 8 cases (pipeline/streaming/config)
+
+**3. Docker Compose Distributed Platform**
+   - 4-service architecture (FastAPI, Streamlit, MLflow, streaming worker)
+   - One-command deployment: `docker-compose up --build`
+   - Environment variable management with `.env.example` template
+
+**4. Streamlit Visual Monitoring Layer** (`src/pulsenet/dashboard/app.py`)
+   - Real-time telemetry visualization dashboard
+   - Multi-model prediction comparison interface
+   - System health metrics monitoring
+
+**5. CI/CD Pipeline Governance** (`.github/workflows/ci.yml`)
+   - Automated lint (Ruff), test (Pytest), type check (Pyright), Docker build
+   - Runs on every push and pull request to `main` branch
+
+---
+
+## 📊 Benchmark Results
+
+| Metric | Value | Target | Status |
+|---|---|---|---|
+| Inference Latency (median) | <5ms | <50ms | ✅ |
+| Throughput (batch=64) | >10,000 samples/sec | >1,000 | ✅ |
+| Data Integrity (30% packet loss) | 99.8% | >95% | ✅ |
+| Encryption Overhead | <0.5ms | <10ms | ✅ |
+| Blockchain Block Add Time | <1ms | <5ms | ✅ |
+
+```bash
+python main_pipeline.py --mode benchmark  # Generate full performance report
+```
+
+---
